@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Market</title>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            var panorama = new google.maps.StreetViewPanorama(
+                document.getElementById('map'), {
+                    position: { lat: 37.231776, lng: -77.344579 },
+                    pov: { heading: 34, pitch: 10 },
+                    zoom: 1
+                });
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="luckycat.mp4" type="video/mp4">
+            <source src="luckycat.mp4" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <div class="text-container">
+            <div class="title" id="title">Tokyo Market</div>
+            <div class="subtype">Newport News</div>
+        </div>
+    </div>
+
+    <main>
+        <section id="Products&Services" class="services section">
+            <div class="content">
+                <h2>We have a wide variety! Inventory changes and is updated often, so come by to check out <br> Newport News Tokyo Market Groceries and Gifts!</h2>
+                <div class="viewport-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1722025666909!6m8!1m7!1sCAoSK0FGMVFpcE9MbWFjbDhJVlE1WjFFa0t6b0hTM0JaWVd0SlAzQWxmelUta2s.!2m2!1d37.10322447676538!2d-76.4586935350016!3f100!4f10!5f0.7820865974627469" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+        </section>
+        <section>
+          <div class="video-container">
+            <video autoplay muted loop>
+                <source src="tokyotower.mp4" type="video/mp4">
+                <source src="tokyotower.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <div class="texty-container">
+              <div><h2 style="color: white; text-shadow: 3px 3px 5px #b2880b;";>Located at: 1215-J George Washington Memorial Hwy, Yorktown, VA 23693</h2>
+                <a href="https://www.google.com/maps?q=Tokyo+Market,1215-J+George+Washington+Memorial+Hwy,Yorktown,VA+23693" target="_blank">
+                    <button class="map-button">Open in Google Maps for directions</button>
+                </a>
+                <br><br><br>
+                <a href="tel:+17575832898" style="text-decoration: none; color: rgb(255, 255, 255); text-shadow: 3px 3px 5px #b2880b;"><h2>Click to call: (757) 583-2898</h2></a></div> class="title" id="title">Tokyo Market</div>
+              <div class="subtype">Newport News</div>
+          </div>
+      </div>
+        </section>
+
+        <section>
+            <footer>
+                <p style="color: white;">&copy; 2024 <a href="https://www.medvedska.com" target="_blank" style="color: inherit; text-decoration: none;">Medvedska LLC</a></p>
+            </footer>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
