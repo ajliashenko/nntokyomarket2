@@ -248,9 +248,10 @@ nav ul li a:active {
     margin: 0 auto;
     padding: 0 1em;
     z-index: 1;
-    background-color: rgb(221, 189, 44);
+    background-color: rgb(233, 198, 41);
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 70px;
+    box-shadow: 5px 5px 50px rgb(208, 153, 13);
 }
 
 /* Services */
