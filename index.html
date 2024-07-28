@@ -17,6 +17,36 @@
         }
     </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const video = document.querySelector('video');
+        // Check if video can auto-play, if not, add a user interaction
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+            playPromise.then(() => {
+                // Auto-play started
+            }).catch(error => {
+                // Auto-play was prevented
+                // Show a play button and play video on click
+                const playButton = document.createElement('button');
+                playButton.innerText = 'Play Video';
+                playButton.style.position = 'absolute';
+                playButton.style.top = '50%';
+                playButton.style.left = '50%';
+                playButton.style.transform = 'translate(-50%, -50%)';
+                playButton.style.padding = '10px 20px';
+                playButton.style.fontSize = '16px';
+                document.body.appendChild(playButton);
+
+                playButton.addEventListener('click', () => {
+                    video.play();
+                    playButton.remove();
+                });
+            });
+        }
+    });
+</script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
