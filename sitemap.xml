@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <!-- Home Page -->
+  <url>
+    <loc>http://www.nntokyomarket.com/</loc>
+    <lastmod>2024-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Products & Services Section -->
+  <url>
+    <loc>http://www.nntokyomarket.com#Products&amp;Services</loc>
+    <lastmod>2024-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>http://www.nntokyomarket.com/path/to/luckycat-thumbnail.jpg</video:thumbnail_loc>
+      <video:title>Lucky Cat Video</video:title>
+      <video:description>A video of a lucky cat welcoming you to Tokyo Market.</video:description>
+      <video:content_loc>http://www.nntokyomarket.com/path/to/luckycat.mp4</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">http://www.nntokyomarket.com#Products&amp;Services</video:player_loc>
+      <video:duration>120</video:duration>
+      <video:publication_date>2024-07-27T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+  <!-- Location & Contact Section -->
+  <url>
+    <loc>http://www.nntokyomarket.com#Location</loc>
+    <lastmod>2024-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <video:video>
+      <video:thumbnail_loc>http://www.nntokyomarket.com/path/to/nntokyomarket2/tokyotower-thumbnail.jpgtokyotower-thumbnail.jpg</video:thumbnail_loc>
+      <video:title>Tokyo Tower Video</video:title>
+      <video:description>A video showcasing the Tokyo Tower at night.</video:description>
+      <video:content_loc>http://www.nntokyomarket.com/path/to/tokyotower.mp4</video:content_loc>
+      <video:player_loc allow_embed="yes" autoplay="ap=1">http://www.nntokyomarket.com#Location</video:player_loc>
+      <video:duration>150</video:duration>
+      <video:publication_date>2024-07-27T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+
+</urlset>
